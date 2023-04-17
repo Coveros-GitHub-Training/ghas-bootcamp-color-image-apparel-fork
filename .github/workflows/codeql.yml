@@ -58,7 +58,7 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v3.9.0
       with:
-        distribution: 'oracle'
+        distribution: 'microsoft'
         java-version: 15
     
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
