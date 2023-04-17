@@ -1,16 +1,18 @@
 # Reusing existing QL Pack
-from: codeql-javascript
-- import: codeql-suites/javascript-code-scanning.qls
+name: "CodeQL Scanning Config"
+queries:
+  - import: codeql-suites/javascript-code-scanning.qls
+  from: codeql-javascript
 
-from: codeql-java
-- import: codeql-suites/java-code-scanning.qls
+  - import: codeql-suites/java-code-scanning.qls
+  from: codeql-java
 
-from: codeql-python
-- import: codeql-suites/python-code-scanning.qls
+  - import: codeql-suites/python-code-scanning.qls
+  from: codeql-python
 
-from: codeql-go
-- import: codeql-suites/go-code-scanning.qls
+  - import: codeql-suites/go-code-scanning.qls
+  from: codeql-go
 
-- exclude:
-id:
-- py/log-injection
+  - exclude:
+  id:
+    - py/log-injection
