@@ -1,5 +1,3 @@
 name: "CodeQL config"
-queries: 
-  - name: Run custom queries
-    uses: ./queries
+queries:
   - uses: security-and-quality
