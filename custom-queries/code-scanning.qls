@@ -1,5 +1,4 @@
 # Reusing existing QL Pack
-name: "CodeQL Scanning Config"
 queries:
   - import: codeql-suites/javascript-code-scanning.qls
   from: codeql-javascript
