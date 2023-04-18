@@ -12,5 +12,5 @@
   from: codeql/go-queries
 
 - exclude:
-id:
-  - py/log-injection
+    id:
+      - py/log-injection
